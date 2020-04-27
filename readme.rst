@@ -1,70 +1,22 @@
-###################
-What is CodeIgniter
-###################
+Sistema desenvolvido para a **comunidade em geral de ArmA** e outros jogos que necessitam de uma organização de partida.
+O sistema está em beta então poderá conter bugs, preço ajuda dos que forem utilizar para dar reports dos mesmo.
 
-CodeIgniter is an Application Development Framework - a toolkit - for people
-who build web sites using PHP. Its goal is to enable you to develop projects
-much faster than you could if you were writing code from scratch, by providing
-a rich set of libraries for commonly needed tasks, as well as a simple
-interface and logical structure to access these libraries. CodeIgniter lets
-you creatively focus on your project by minimizing the amount of code needed
-for a given task.
+# Como instalar?
+- Para instalar o sistema é bem simples, basta enviar para a hospedagem que desejar em seguida ir até o arquivo que se encontar
+application/config.php e alterar a linha 26 $config['base_url'] = 'http://localhost/qg'; colocando onde seu sistema está.
+- Antes de configurar o arquivo do banco de dados você deverá criar um banco de dados em sua hospedagem e importar o banco de dados que se 
+encontra no diretório tabela com o nome de qg_missoes.sql.
+ - Para configurar o banco de dados deverá ir até o arquivo que se encontra em  application/database.php e aletrar as linhas 78, 79 , 80 e 81 com as configurações de seu banco de dados.
+- Logar no sistema com o usuário e senha admin
 
-*******************
-Release Information
-*******************
+# Bugs
+- [ ] trumbowyg não está aparecendo no campo da descrição da missão
 
-This repo contains in-development code for future releases. To download the
-latest stable release please visit the `CodeIgniter Downloads
-<https://codeigniter.com/download>`_ page.
-
-**************************
-Changelog and New Features
-**************************
-
-You can find a list of all changes for each release in the `user
-guide change log <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/changelog.rst>`_.
-
-*******************
-Server Requirements
-*******************
-
-PHP version 5.6 or newer is recommended.
-
-It should work on 5.3.7 as well, but we strongly advise you NOT to run
-such old versions of PHP, because of potential security and performance
-issues, as well as missing features.
-
-************
-Installation
-************
-
-Please see the `installation section <https://codeigniter.com/user_guide/installation/index.html>`_
-of the CodeIgniter User Guide.
-
-*******
-License
-*******
-
-Please see the `license
-agreement <https://github.com/bcit-ci/CodeIgniter/blob/develop/user_guide_src/source/license.rst>`_.
-
-*********
-Resources
-*********
-
--  `User Guide <https://codeigniter.com/docs>`_
--  `Language File Translations <https://github.com/bcit-ci/codeigniter3-translations>`_
--  `Community Forums <http://forum.codeigniter.com/>`_
--  `Community Wiki <https://github.com/bcit-ci/CodeIgniter/wiki>`_
--  `Community Slack Channel <https://codeigniterchat.slack.com>`_
-
-Report security issues to our `Security Panel <mailto:security@codeigniter.com>`_
-or via our `page on HackerOne <https://hackerone.com/codeigniter>`_, thank you.
-
-***************
-Acknowledgement
-***************
-
-The CodeIgniter team would like to thank EllisLab, all the
-contributors to the CodeIgniter project and you, the CodeIgniter user.
+# Planos para o futuro
+- [ ] Implementação do sistema de e-mails
+- [ ] Implementação do sistema de cadastro de usuário independente 
+- [ ] Implementação do esqueci minha senha
+- [ ] Implementação do sistema de manter conectado
+- [ ] Implementação do sistema de recrutamento
+- [ ] Implementação OAuth Steam, GMAIL, Facebook
+- [ ] Implementação sistema de doações
